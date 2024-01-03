@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.flex-container {
+    display: flex;
+    /*flex-direction: column;  /*row-reverse là đảo chiều ,column theo chiều dọc */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 100vh;/*view height*//*vw: width*/
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+}
+.item:first-child {
+    background-color: black;
+    color: white;
+    flex: 1;
+}
+.item:nth-child(2) {
+    background-color: pink;
+    flex: 2;
+}
+.item:last-child {
+    background-color: blue;
+    color: yellow;
+    flex: 3;
+}
